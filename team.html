@@ -136,46 +136,70 @@
 
     </section>
 
-    <div class="regiter_s">
-        <div class="left">
-            <p class="heading">Welcome Back</p>
-            <p class="sub_heading">Your ideas. Your projects. One login away Log in to shape the future of your work.
+    <div class="about_aisect">
+
+        <div class="heading">About</div>
+        <div class="main_heading">Shodh Shikhar Team</div>
+        <div class="min_heading">( Driving Innovation, Inspiring Change )</div>
+
+        <div class="inner">
+
+            <p>
+                At <strong>Shodh Shikhar</strong> , we believe that great ideas come to life when passion meets purpose, and behind
+                India’s leading
+                research and innovation festival stands a dedicated team of visionary leaders, academic experts,
+                mentors, innovators,
+                and coordinators who work tirelessly to create a platform where knowledge meets opportunity. With a
+                shared vision and
+                unwavering commitment, our team focuses on every detail — from strategic planning to flawless execution
+                — ensuring that
+                each aspect of the event reflects excellence and innovation. Their collective efforts make Shodh Shikhar
+                2025 a truly
+                transformative experience, where every participant, whether a student, researcher, or innovator, embarks
+                on a seamless,
+                inspiring, and impactful journey that celebrates creativity, nurtures talent, and shapes the future of
+                research and
+                innovation.
             </p>
-            <label>Enter Mobile No. <span>with Country Code</span></label>
-            <div class="mobile_input">
-                <input type="text">
-                <button>Get OTP</button>
+
+            <div class="inner_team">
+
+                <!--  -->
+                <div class="team">
+                    <div class="team_card_d">
+                        <span class="icon"><span class="inner"><img src="Assets/Images/user.png"></span></span>
+                        <span class="text">Shri Santosh Choubey (Chancellor, RNTU) </span>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="team">
+                    <div class="team_card_d">
+                        <span class="icon"><span class="inner"><img src="Assets/Images/user.png"></span></span>
+                        <span class="text">Dr. Aditi Chaturvedi (Pro-Chancellor, RNTU)</span>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="team">
+                    <div class="team_card_d">
+                        <span class="icon"><span class="inner"><img src="Assets/Images/user.png"></span></span>
+                        <span class="text">Dr. Rachna Chaturvedi (Researche Director)</span>
+                    </div>
+                </div>
+
             </div>
 
-            <label>Enter OTP</label>
-            <div class="OTP_input" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-            </div>
-            <div class="reset">
-                Didn’t you receive the OTP? <a href="">Resend OTP</a>
-            </div>
-            <button class="login_btn">
-                Login
-            </button>
-            <div class="redirect">
-                Don't you have an account? <a href="register.html">Register Now</a>
-            </div>
         </div>
-        <div class="right">
-            <img src="Assets/Images/register_p.jpg">
-        </div>
+
+
 
     </div>
 
     <!-- Footer Section  -->
     <div class="D_footer">
         <div class="inner_footer">
-            <div class="coll_f f_1">
+            <div class="coll_f ">
                 <div class="heading">Shodh Shikhar</div>
                 <p>
                     Since 2021, flagship annual research compendium and festival organized by the AISECT Group of
@@ -192,28 +216,6 @@
                 </div>
             </div>
 
-            <div class="coll_f ">
-                <div class="heading">Useful Links</div>
-                <ul>
-                    <li>About Us</li>
-                    <li>Registration</li>
-                    <li>Faculty & Stuffs</li>
-                    <li>Media Relations</li>
-                    <li>Alumni</li>
-                    <li>All Awards</li>
-                </ul>
-            </div>
-            <div class="coll_f f_2">
-                <div class="heading">Our Research</div>
-                <ul>
-                    <li>Vigyan Parv </li>
-                    <li>Indian Knowledge System </li>
-                    <li>Engineering & Technology</li>
-                    <li>Management & Commerce</li>
-                    <li>Holistic Medical Science</li>
-                    <li>Humanities & Liberal Arts</li>
-                </ul>
-            </div>
             <div class="coll_f">
                 <div class="heading">Instagram</div>
                 <div class="img_grid">
@@ -252,30 +254,6 @@
 
     <!-- Boostrap Js 5.2.3 -->
     <script src="Js/bootstrap-5.2.3/bootstrap.bundle.js"></script>
-    <script>
-        const inputs = document.querySelectorAll(".OTP_input input");
-
-        inputs.forEach((input, index) => {
-            input.addEventListener("input", (e) => {
-                const value = e.target.value;
-
-                // Only allow numbers
-                e.target.value = value.replace(/[^0-9]/g, "");
-
-                // Move to next input if a number is entered
-                if (value && index < inputs.length - 1) {
-                    inputs[index + 1].focus();
-                }
-            });
-
-            input.addEventListener("keydown", (e) => {
-                if (e.key === "Backspace" && !input.value && index > 0) {
-                    inputs[index - 1].focus();
-                }
-            });
-        });
-
-    </script>
 
 </body>
 

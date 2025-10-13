@@ -136,39 +136,52 @@
 
     </section>
 
-    <div class="regiter_s">
-        <div class="left">
-            <p class="heading">Welcome Back</p>
-            <p class="sub_heading">Your ideas. Your projects. One login away Log in to shape the future of your work.
-            </p>
-            <label>Enter Mobile No. <span>with Country Code</span></label>
-            <div class="mobile_input">
-                <input type="text">
-                <button>Get OTP</button>
+    <div class="about_aisect">
+
+        <div class="heading">About</div>
+        <div class="main_heading"><span>ASIECT</span> Organization</div>
+        <div class="min_heading">( Empowering Education, Innovation, and Entrepreneurship for a Better Tomorrow )</div>
+
+        <div class="inner">
+
+            <div class="img_section">
+                <div class="left">
+                    <img src="Assets/Images/aboutasiect1.jpg" alt="Main Image">
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <img src="Assets/Images/aboutasiect2.jpg" alt="Top Right">
+                    </div>
+                    <div class="bottom">
+                        <img src="Assets/Images/aboutasiect3.jpg" alt="Bottom Right">
+                    </div>
+                </div>
             </div>
 
-            <label>Enter OTP</label>
-            <div class="OTP_input" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-            </div>
-            <div class="reset">
-                Didn’t you receive the OTP? <a href="">Resend OTP</a>
-            </div>
-            <button class="login_btn">
-                Login
-            </button>
-            <div class="redirect">
-                Don't you have an account? <a href="register.html">Register Now</a>
-            </div>
+            <p>
+                AISECT is a top Indian social enterprise focused on skill development, higher education, financial
+                inclusion,
+                e-governance, and other ICT services in semi-urban and rural areas. Since 1985, the Bhopal-based
+                organization has
+                tirelessly served remote regions for 37 years, empowering people, creating jobs for youth, and promoting
+                entrepreneurship.  <br> <br>
+                The refined over time AISECT model is self-sustaining, scalable, and entrepreneurial, seamlessly meeting
+                the demands
+                of
+                local communities for various skills and ICT services. It has a wide reach, operating in 605 districts,
+                2100 blocks,
+                and
+                8550 Panchayats across 29 states and 4 territories through over 31000 centers and offices. Till date,
+                we’ve trained
+                over
+                26 lakh people, created jobs for over 100,000, and improved the lives of over 50 lakh people through
+                innovative
+                products
+                and services.
+            </p>
         </div>
-        <div class="right">
-            <img src="Assets/Images/register_p.jpg">
-        </div>
+
+
 
     </div>
 
@@ -206,7 +219,7 @@
             <div class="coll_f f_2">
                 <div class="heading">Our Research</div>
                 <ul>
-                    <li>Vigyan Parv </li>
+                    <li>Vigyan Parv</li>
                     <li>Indian Knowledge System </li>
                     <li>Engineering & Technology</li>
                     <li>Management & Commerce</li>
@@ -252,30 +265,6 @@
 
     <!-- Boostrap Js 5.2.3 -->
     <script src="Js/bootstrap-5.2.3/bootstrap.bundle.js"></script>
-    <script>
-        const inputs = document.querySelectorAll(".OTP_input input");
-
-        inputs.forEach((input, index) => {
-            input.addEventListener("input", (e) => {
-                const value = e.target.value;
-
-                // Only allow numbers
-                e.target.value = value.replace(/[^0-9]/g, "");
-
-                // Move to next input if a number is entered
-                if (value && index < inputs.length - 1) {
-                    inputs[index + 1].focus();
-                }
-            });
-
-            input.addEventListener("keydown", (e) => {
-                if (e.key === "Backspace" && !input.value && index > 0) {
-                    inputs[index - 1].focus();
-                }
-            });
-        });
-
-    </script>
 
 </body>
 

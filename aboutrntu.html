@@ -136,46 +136,94 @@
 
     </section>
 
-    <div class="regiter_s">
-        <div class="left">
-            <p class="heading">Welcome Back</p>
-            <p class="sub_heading">Your ideas. Your projects. One login away Log in to shape the future of your work.
-            </p>
-            <label>Enter Mobile No. <span>with Country Code</span></label>
-            <div class="mobile_input">
-                <input type="text">
-                <button>Get OTP</button>
+    <div class="about_aisect">
+
+        <div class="heading">About</div>
+        <div class="main_heading"><span>RNTU</span> Organization</div>
+        <div class="min_heading">( Collaborating for Innovation, Research, and Impact )</div>
+
+        <div class="inner">
+
+            <div class="img_section">
+                <div class="left">
+                    <img src="Assets/Images/aboutasiect1.jpg" alt="Main Image">
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <img src="Assets/Images/aboutasiect2.jpg" alt="Top Right">
+                    </div>
+                    <div class="bottom">
+                        <img src="Assets/Images/aboutasiect3.jpg" alt="Bottom Right">
+                    </div>
+                </div>
             </div>
 
-            <label>Enter OTP</label>
-            <div class="OTP_input" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-                <input type="text" maxlength="1">
-            </div>
-            <div class="reset">
-                Didn’t you receive the OTP? <a href="">Resend OTP</a>
-            </div>
-            <button class="login_btn">
-                Login
-            </button>
-            <div class="redirect">
-                Don't you have an account? <a href="register.html">Register Now</a>
-            </div>
+            <p>
+                Shodh Shikhar stands as one of India’s most prestigious research and innovation festivals, celebrated
+                for fostering
+                creativity, collaboration, and groundbreaking discoveries. The success of this grand initiative is built
+                upon the strong
+                Commercializations we share with esteemed organisations, universities, industries, research councils,
+                and
+                innovation-driven institutions across the country. 
+            </p>
+
+            <p>
+                These collaborations are more than just associations — they represent a shared vision of progress and a
+                commitment to
+                shaping the future of research and technology. By combining knowledge, resources, and expertise, our
+                Commercializations
+                help create a powerful ecosystem where young innovators, researchers, and academicians come together to
+                exchange ideas,
+                develop solutions, and bring transformative projects to life.
+            </p>
+
+            <br>
+
+            <p>
+                Through their support, Shodh Shikhar has been able to bridge the gap between academia and industry,
+                inspire cutting-edge
+                innovations, and provide an influential platform where aspiring minds gain global exposure. Together, we
+                are nurturing a
+                culture of collaboration, learning, and excellence, ensuring that the next generation of leaders is
+                well-equipped to
+                address real-world challenges and drive India toward a Viksit Bharat.
+            </p>
+
+
+            <p>
+                Rabindranath Tagore University (RNTU) is widely recognized as the best university in Bhopal, offering a
+                dynamic,
+                vibrant, and future-focused academic environment. The university provides a wide range of high-end,
+                innovative, and
+                new-age courses designed to meet the evolving needs of today’s job market. With a strong emphasis on
+                practical learning,
+                research, innovation, and entrepreneurship, RNTU ensures that students not only gain academic knowledge
+                but also develop
+                essential skills for real-world success.
+            </p>
+
+            <br>
+
+            <p>
+                At RNTU, students benefit from experienced faculty, modern infrastructure, industry tie-ups, and
+                dedicated incubation
+                support through initiatives like the Atal Incubation Centre. The university’s commitment to creating a
+                conducive and
+                career-oriented learning atmosphere empowers students to explore their interests, enhance their
+                capabilities, and
+                achieve excellence in their chosen fields.
+            </p>
         </div>
-        <div class="right">
-            <img src="Assets/Images/register_p.jpg">
-        </div>
+
+
 
     </div>
 
     <!-- Footer Section  -->
     <div class="D_footer">
         <div class="inner_footer">
-            <div class="coll_f f_1">
+            <div class="coll_f ">
                 <div class="heading">Shodh Shikhar</div>
                 <p>
                     Since 2021, flagship annual research compendium and festival organized by the AISECT Group of
@@ -192,28 +240,6 @@
                 </div>
             </div>
 
-            <div class="coll_f ">
-                <div class="heading">Useful Links</div>
-                <ul>
-                    <li>About Us</li>
-                    <li>Registration</li>
-                    <li>Faculty & Stuffs</li>
-                    <li>Media Relations</li>
-                    <li>Alumni</li>
-                    <li>All Awards</li>
-                </ul>
-            </div>
-            <div class="coll_f f_2">
-                <div class="heading">Our Research</div>
-                <ul>
-                    <li>Vigyan Parv </li>
-                    <li>Indian Knowledge System </li>
-                    <li>Engineering & Technology</li>
-                    <li>Management & Commerce</li>
-                    <li>Holistic Medical Science</li>
-                    <li>Humanities & Liberal Arts</li>
-                </ul>
-            </div>
             <div class="coll_f">
                 <div class="heading">Instagram</div>
                 <div class="img_grid">
@@ -252,30 +278,6 @@
 
     <!-- Boostrap Js 5.2.3 -->
     <script src="Js/bootstrap-5.2.3/bootstrap.bundle.js"></script>
-    <script>
-        const inputs = document.querySelectorAll(".OTP_input input");
-
-        inputs.forEach((input, index) => {
-            input.addEventListener("input", (e) => {
-                const value = e.target.value;
-
-                // Only allow numbers
-                e.target.value = value.replace(/[^0-9]/g, "");
-
-                // Move to next input if a number is entered
-                if (value && index < inputs.length - 1) {
-                    inputs[index + 1].focus();
-                }
-            });
-
-            input.addEventListener("keydown", (e) => {
-                if (e.key === "Backspace" && !input.value && index > 0) {
-                    inputs[index - 1].focus();
-                }
-            });
-        });
-
-    </script>
 
 </body>
 
